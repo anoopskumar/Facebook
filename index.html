@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link href="fb.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="fb.js" ></script>
+    <script src="passwordValidation.js" ></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class=header>
+         <div class="logo">
+           <a class="logo-text" href="facebook.html" title="facebook">facebook</a> 
+         </div>
+         <div class="login">
+             <form>
+            <table class="login-controls" >
+                <tr>
+                    <td><label class="login-label" > Email or phone<label></label></td>
+                    
+                    <td><label class="login-label">password</label></td>
+                </tr>
+                <tr>
+                    <td class="l"><input type="text"></td>
+                    <td class="l"><input type="text"></td>
+                    <td class="l"><button class="login-button" type="submit" value="Login">Log in</button></td>
+                </tr>
+                 <tr>
+                     <td></td>
+                     <td><a href="facebook.html" style="font-family: SFProText-Regular, Helvetica, Arial, sans-serif; color: #fff;text-decoration:none;">forgotten account?</a></td>
+                
+                 </tr>
+                 
+            </table>
+             </form>
+         </div>
+        </div>
+        <div class="main-body" >
+            <form class="signup-form" id="signup-form">
+             <div class="signup-contols">
+               
+                <h1 class="main-head" style="text-align: center;">Create a new account</h1>
+                <p class="main-para">It's quick and easy.</p>
+                 
+                <input type="text" class="first-name" placeholder="firstname" name="fname" >
+                <input type="text" class="surname" placeholder="surname" name="sname">
+                <br>
+                <input type="text" class="Mobile" placeholder="Mobile number or email adress" name="fmail" >
+                <br>
+                <input type="password" class="password" placeholder="new password" name="password" id="password" onkeyup="checkPasswordStrength()" data-rule-password="true" required><div id="password-strength-status" style="text-align: center;"></div>
+                <input type="password" class="password" placeholder="re-enter password" name="repass" id="rp" data-rule-password="true" data-rule-equalTo="#password" required>
+                <p class="dob">Date of birth</p>
+                <select class="day"name="fday" >
+                    <option selected="selected" disabled="disabled" value="1">day</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                    <option value="4">3</option>
+                </select>
+                <select class="month" name="fmon">
+                    <option selected="selected" disabled="disabled"value="1">mon</option>
+                    <option value="2">jan</option>
+                    <option value="3">feb</option>
+                    <option value="4">dec</option>
+                </select>
+                <select class="year" name="fyear">
+                    <option selected="selected" disabled="disabled" value="1">year</option>
+                    <option value="2">2020</option>
+                    <option value="3">2021</option>
+                    <option value="4">2022</option>
+                </select>
+                <a class="i" href="#"title="Click me for more information"></a>
+                <p class="gender">Gender</p>
+               
+                <input type="radio" id="gen" name="ge" value="gen"class="m" checked="checked">
+                <label for="gen" >Male</label>
+                <input type="radio" id="le" name="ge" value="le">
+                <label for="le">Female</label>
+                <input type="radio" id="ce" name="ge" value="ce">
+                <label for="ce">coustoms</label>
+                
+                <a class="i" href="#"title="Click me for more information"></a>
+
+                <p class="lastpara"><small>By clicking Sign Up, you agree to our <a href="">Terms</a>,  <a href="">Data policy</a> and<br>  <a href="">Cookie policy</a>. You may receive SMS notifications from us and<br>can opt out at any time.</small></p>
+                <button  class="button">Sign up</button>
+          
+            
+            </div>
+          </form>
+          <div class="footer">
+            <div class="footer-content">
+                <div >
+                    
+                   <pre> <span style="color: #737373;">English(UK)</span> <a href="#" title="Malayalam" style="color: #385898;text-decoration: none;" >മലയാളം</a> <a href="#" title="Tamil" style="color: #385898;text-decoration: none;">தமிழ்</a> <a href="#" title="Telgu" style="color: #385898;text-decoration: none;">తెలుగు</a> <a href="#" title="Urudu" style="color: #385898;text-decoration: none;">اردو</a> <a href="#" title="Hindi" style="color: #385898;text-decoration: none;">हिन्दी</a> <a href="#" title="Kannada" style="color: #385898;text-decoration: none;">ಕನ್ನಡ</a> <a href="#" title="Spanish" style="color: #385898;text-decoration: none;">Español</a> <a href="#" title="Português (Brasil)" style="color: #385898;text-decoration: none;">Português(Brasil)</a> <a href="#" title="Français(France)" style="color: #385898;text-decoration: none;">Français(France)</a></pre><hr style="color: #737373;text-decoration: none;">
+                  <pre ><a href="#"class="last" style="text-decoration: none;">SignUp</a>  <a href="#"class="last"style="text-decoration: none;">Logln</a>  <a href="#"class="last"style="text-decoration: none;">Messenger</a>  <a href="#"class="last"style="text-decoration: none;">FacebookLite</a>  <a href="#"class="last"style="text-decoration: none;">Watch</a>  <a href="#"class="last"style="text-decoration: none;">People</a>  <a href="#"class="last"style="text-decoration: none;">Page</a>  <a href="#"class="last"style="text-decoration: none;">Pagecategories</a>  <a href="#"class="last"style="text-decoration: none;">Place</a>  <a href="#"class="last"style="text-decoration: none;">game</a>  <a href="#"class="last"style="text-decoration: none;">Location</a>  <a href="#"class="last"style="text-decoration: none;">Marketplace</a>  <a href="#"class="last"style="text-decoration: none;">Facebook Pay</a> <a href="#"class="last"style="text-decoration: none;">Groups</a></pre>
+                  <pre ><a href="#"class="last"style="text-decoration: none;">Jobs</a>  <a href="#"class="last"style="text-decoration: none;">Culus</a>  <a href="#"class="last"style="text-decoration: none;">Portal</a>  <a href="#"class="last"style="text-decoration: none;">Instagram</a>  <a href="#"class="last"style="text-decoration: none;">Local</a>  <a href="#"class="last"style="text-decoration: none;">Fungraisers</a>  <a href="#"class="last"style="text-decoration: none;">Services</a>  <a href="#"style="text-decoration: none;"class="last">Voting information centre</a>  <a href="#"class="last"style="text-decoration: none;">About</a>  <a href="#"class="last"style="text-decoration: none;">Create Ad</a>  <a href="#"class="last"style="text-decoration: none;">Create Page</a>  <a href="#"class="last"style="text-decoration: none;">Developers</a>  <a href="#"class="last"style="text-decoration: none;">Carrers</a> <a href="#"class="last"style="text-decoration: none;">Privacy</a></pre>
+                  <pre><a href="#" class="last"style="text-decoration: none;">Cookies</a> <a href="#" class="last"style="text-decoration: none;">Adchoies</a> <a href="#" class="last"style="text-decoration: none;">Terms</a> <a href="#"class="last"style="text-decoration: none;">Help</a></pre><br>
+                  <small style="color: #737373;">Facebook © 2021</small>
+                    
+
+                    
+                    
+                    
+                    
+                    
+              
+                
+                </div>
+            </div>
+          </div>
+        </div> 
+    </div>
+</body>
+</html>
