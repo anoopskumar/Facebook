@@ -1,2 +1,2 @@
 # Facebook
-Using html,css and javascript.I Created a login page of facebook.
+Created a login page of facebook using html,css and javascript.
